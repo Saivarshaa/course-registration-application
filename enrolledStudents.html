@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enrolled Students</title>
+    <style>
+        td{
+            background-color: #b3ffff;
+            
+        }
+    </style>
+    <script src="myscript.js"></script>
+</head>
+<body>
+    <table align="center" border="1" style="background-color: black;">
+        <tr align="center" style="background-color:#ffb3ff;">
+            <th>Student Id</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Course Name</th>
+        </tr>
+
+        <tbody align="center" id="studentTable"></tbody>
+    </table>
+
+    <script>
+        window.onload = function(){
+            showStudents();
+        }
+    </script>
+</body>
+</html>

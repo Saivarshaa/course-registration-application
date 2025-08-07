@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        h1{
+            text-transform: capitalize;
+            color:#662200;
+        }
+        .form-container{
+            width: 400px;
+            margin: auto;
+            padding: 25px;
+            background-color: #ccccff;
+            text-align: center;
+            border: 2px solid;
+            border-color: black;
+            border-radius: 20px;
+        }
+        label{
+            display: block;
+            margin-bottom: 2px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight:490 ;
+            text-transform: capitalize;
+        }
+        input{
+            border-radius: 5px;
+            padding: 5px;
+            width: 200px;
+        }
+        select{
+            border-radius: 5px;
+            padding: 5px;
+            width: 200px;
+        }
+        button{
+            background-color:  #8cff66;
+            padding: 8px 16px;
+            border-radius: 5px;
+            color:black;
+            font-weight:300 ;
+        }
+        button:hover{
+            background-color:  #40ff00;
+        }
+        option{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            border-radius: 5px;
+            padding: 5px;
+            font-weight: 490px;
+            
+        }
+        body{
+            text-align: center;
+            background-color: #adebeb ;
+        }
+    </style>
+</head>
+<body>
+    <h1>Start Your learning journey now</h1>
+    <div class="form-container">
+    <form action="http://localhost:8080/courses/register" method="post">
+        <label for="name">Enter your name</label>
+        <input type="text" name="name"><br><br>
+
+        <label for="email">Enter your email</label>
+        <input type="email" name="emailId"><br><br>
+
+        <label for="course">Choose a course</label>
+       <select id="course" name="courseName">
+            <option value="Java Programming">Java Programming</option>
+            <option value="Spring Boot">Spring Boot</option>
+            <option value="Web Development">Web Development</option>
+            <option value="Python for Data Science">Python for Data Science</option>
+            <option value="DevOps Essentials">DevOps Essentials</option>
+            <option value="Cloud Computing">Cloud Computing</option>
+            <option value="Machine Learning">Machine Learning</option>
+            <option value="Database Systems">Database Systems</option>
+       </select><br><br>
+
+       <button type="submit">Submit</button>
+    </form>
+    </div>
+</body>
+</html>
